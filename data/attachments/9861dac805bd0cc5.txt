@@ -1,0 +1,34 @@
+INFO     AccountService:api_client.py:25 ================================================================================
+INFO     AccountService:api_client.py:26 POST https://demoqa.com/Account/v1/User
+INFO     AccountService:api_client.py:35 Request Body:
+{
+    "userName": "sandra51554513",
+    "password": "ZaKF1g$^ba$7"
+}
+INFO     AccountService:api_client.py:54 Status Code : 201
+INFO     AccountService:api_client.py:57 Response Body:
+{
+    "userID": "ee4dbcbb-f27b-487a-a739-868e698cb359",
+    "username": "sandra51554513",
+    "books": []
+}
+INFO     AccountService:api_client.py:67 ================================================================================
+INFO     AccountService:api_client.py:25 ================================================================================
+INFO     AccountService:api_client.py:26 POST https://demoqa.com/Account/v1/Login
+INFO     AccountService:api_client.py:35 Request Body:
+{
+    "userName": "sandra51554513",
+    "password": "ZaKF1g$^ba$7"
+}
+INFO     AccountService:api_client.py:54 Status Code : 200
+INFO     AccountService:api_client.py:57 Response Body:
+{
+    "userId": "ee4dbcbb-f27b-487a-a739-868e698cb359",
+    "username": "sandra51554513",
+    "password": "ZaKF1g$^ba$7",
+    "token": null,
+    "expires": null,
+    "created_date": "2026-08-10T06:15:17.000Z",
+    "isActive": false
+}
+INFO     AccountService:api_client.py:67 ================================================================================
