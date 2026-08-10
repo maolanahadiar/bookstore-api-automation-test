@@ -1,4 +1,5 @@
 import allure
+from assertpy import assert_that
 from http import HTTPStatus
 from services.bookstore_service import BookStoreService
 from testdata.book_data import BOOKS
@@ -18,13 +19,13 @@ def test_add_book_without_token(created_user):
         )
 
     with allure.step("Verify response status code"):
-        assert response.status_code == HTTPStatus.UNAUTHORIZED
+        assert_that(response.status_code).is_equal_to(HTTPStatus.UNAUTHORIZED)
     
     with allure.step("Verify response body"):
         body = response.json()
         
-        assert body["code"] == EXPECTED_MESSAGES["unauthorized"]["code"]
-        assert body["message"] == EXPECTED_MESSAGES["unauthorized"]["message"]
+        assert_that(body["code"]).is_equal_to(EXPECTED_MESSAGES["unauthorized"]["code"])
+        assert_that(body["message"]).is_equal_to(EXPECTED_MESSAGES["unauthorized"]["message"])
         
 @allure.title("User cannot retrieve specific book using invalid ISBN")
 def test_get_book_invalid_isbn():
@@ -33,13 +34,13 @@ def test_get_book_invalid_isbn():
         response = book_service.get_book_by_isbn(BOOKS["invalid"]["isbn"])
 
     with allure.step("Verify response status code"):
-        assert response.status_code == HTTPStatus.BAD_REQUEST
+        assert_that(response.status_code).is_equal_to(HTTPStatus.BAD_REQUEST)
         
     with allure.step("Verify response body"):
         body = response.json()
         
-        assert body["code"] == EXPECTED_MESSAGES["invalid_isbn"]["code"]
-        assert body["message"] == EXPECTED_MESSAGES["invalid_isbn"]["message"]
+        assert_that(body["code"]).is_equal_to(EXPECTED_MESSAGES["invalid_isbn"]["code"])
+        assert_that(body["message"]).is_equal_to(EXPECTED_MESSAGES["invalid_isbn"]["message"])
         
 @allure.title("User cannot add duplicate book")
 def test_add_duplicate_book(created_user, user_token):
@@ -51,7 +52,7 @@ def test_add_duplicate_book(created_user, user_token):
             token=user_token,
         )
 
-        assert first_response.status_code == HTTPStatus.CREATED
+        assert_that(first_response.status_code).is_equal_to(HTTPStatus.CREATED)
 
     try:
         with allure.step("Send second request to add same book"):
@@ -62,13 +63,13 @@ def test_add_duplicate_book(created_user, user_token):
             )
 
         with allure.step("Verify response status code"):
-            assert second_response.status_code == HTTPStatus.BAD_REQUEST
+            assert_that(second_response.status_code).is_equal_to(HTTPStatus.BAD_REQUEST)
             
         with allure.step("Verify response body"):
             body = second_response.json()
 
-            assert body["code"] == EXPECTED_MESSAGES["duplicate_book"]["code"]
-            assert body["message"] == EXPECTED_MESSAGES["duplicate_book"]["message"]
+            assert_that(body["code"]).is_equal_to(EXPECTED_MESSAGES["duplicate_book"]["code"])
+            assert_that(body["message"]).is_equal_to(EXPECTED_MESSAGES["duplicate_book"]["message"])
 
     finally:
         with allure.step("Remove first book"):
@@ -90,13 +91,13 @@ def test_update_invalid_book(created_user, user_token):
         )
             
     with allure.step("Verify response status code"):
-        assert response.status_code == HTTPStatus.BAD_REQUEST
+        assert_that(response.status_code).is_equal_to(HTTPStatus.BAD_REQUEST)
         
     with allure.step("Verify response body"):
         body = response.json()
         
-        assert body["code"] == EXPECTED_MESSAGES["invalid_isbn"]["code"]
-        assert body["message"] == EXPECTED_MESSAGES["invalid_isbn"]["message"]
+        assert_that(body["code"]).is_equal_to(EXPECTED_MESSAGES["invalid_isbn"]["code"])
+        assert_that(body["message"]).is_equal_to(EXPECTED_MESSAGES["invalid_isbn"]["message"])
         
 @allure.title("User cannot delete book using invalid token")
 def test_delete_book_without_token(created_user):
@@ -109,10 +110,10 @@ def test_delete_book_without_token(created_user):
         )
 
     with allure.step("Verify response status code"):
-        assert response.status_code == HTTPStatus.UNAUTHORIZED
-    
+        assert_that(response.status_code).is_equal_to(HTTPStatus.UNAUTHORIZED)
+        
     with allure.step("Verify response body"):
         body = response.json()
         
-        assert body["code"] == EXPECTED_MESSAGES["unauthorized"]["code"]
-        assert body["message"] == EXPECTED_MESSAGES["unauthorized"]["message"]
+        assert_that(body["code"]).is_equal_to(EXPECTED_MESSAGES["unauthorized"]["code"])
+        assert_that(body["message"]).is_equal_to(EXPECTED_MESSAGES["unauthorized"]["message"])

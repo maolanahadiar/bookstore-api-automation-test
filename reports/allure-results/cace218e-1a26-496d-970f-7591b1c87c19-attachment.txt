@@ -1,0 +1,34 @@
+[32mINFO    [0m AccountService:api_client.py:25 ================================================================================
+[32mINFO    [0m AccountService:api_client.py:26 POST https://demoqa.com/Account/v1/User
+[32mINFO    [0m AccountService:api_client.py:35 Request Body:
+{
+    "userName": "whitakerjames440276",
+    "password": "^jVW2c9TidyJ"
+}
+[32mINFO    [0m AccountService:api_client.py:54 Status Code : 201
+[32mINFO    [0m AccountService:api_client.py:57 Response Body:
+{
+    "userID": "b9e66df6-84bd-4eb3-b47f-e857e6331ab7",
+    "username": "whitakerjames440276",
+    "books": []
+}
+[32mINFO    [0m AccountService:api_client.py:67 ================================================================================
+[32mINFO    [0m AccountService:api_client.py:25 ================================================================================
+[32mINFO    [0m AccountService:api_client.py:26 POST https://demoqa.com/Account/v1/Login
+[32mINFO    [0m AccountService:api_client.py:35 Request Body:
+{
+    "userName": "whitakerjames440276",
+    "password": "^jVW2c9TidyJ"
+}
+[32mINFO    [0m AccountService:api_client.py:54 Status Code : 200
+[32mINFO    [0m AccountService:api_client.py:57 Response Body:
+{
+    "userId": "b9e66df6-84bd-4eb3-b47f-e857e6331ab7",
+    "username": "whitakerjames440276",
+    "password": "^jVW2c9TidyJ",
+    "token": null,
+    "expires": null,
+    "created_date": "2026-08-10T10:45:35.000Z",
+    "isActive": false
+}
+[32mINFO    [0m AccountService:api_client.py:67 ================================================================================

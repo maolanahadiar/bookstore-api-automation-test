@@ -5,36 +5,53 @@
 ![Requests](https://img.shields.io/badge/Requests-2.34-green)
 ![Allure](https://img.shields.io/badge/Allure-2.16-red)
 
-This project contains automated test for the [DemoQA Bookstore API](https://demoqa.com/swagger) built with Python, Pytest, and Requests for REST API automation testing with request/response logging, CI/CD integration, and Allure reporting.
+This project contains automated tests for the [DemoQA Bookstore API](https://demoqa.com/swagger) built with Python, Pytest, and Requests for REST API automation testing with request/response logging, positive and negative test scenario coverage, Allure reporting, GitHub Actions CI/CD integration, and automated test summary notifications through Telegram.
 
 ---
 
 ## Project Features
 
-- REST API automation testing
-- Reusable API client
-- Service layer architecture
+- API automation testing using Pytest
+- Service layer pattern for API interaction
+- Reusable API client implementation
 - Separated test data and configurations
-- Request and response logging
-- Allure test reporting
+- Provide request and response logging
+- Allure reporting integration
 - GitHub Actions CI/CD integration
+- Automated test summary notifications through Telegram
 
 ---
 
 ## API Testing Coverage
 
-| Module | Test Scenario | Status |
-|-|-|-|
-| Account | Create new user account | 🚧 |
-| | Generate authentication token | 🚧 |
-| | Login with valid credentials | 🚧 |
-| | Get user account details | 🚧 |
-| | Delete user account | 🚧 |
-| BookStore | Get all books | ✅ |
+### 🟢 Positive Scenarios
+
+| Module | Scenario | Status |
+|:--|:--|:--:|
+| **Account** | Create new user account | ✅ |
+| | Generate authentication token | ✅ |
+| | Login with valid credentials | ✅ |
+| | Get user account details | ✅ |
+| | Delete user account | ✅ |
+| **BookStore** | Get all books | ✅ |
 | | Get a specific book by ISBN | ✅ |
 | | Add book to collection | ✅ |
 | | Update book in collection | ✅ |
 | | Delete book from collection | ✅ |
+
+### 🔴 Negative Scenarios
+
+| Module | Scenario | Status |
+|:--|:--|:--:|
+| **Account** | Register with invalid credentials | 🚧 |
+| | Generate token with invalid credentials | 🚧 |
+| | Access account with invalid token | 🚧 |
+| | Delete account with invalid token | 🚧 |
+| **BookStore** | Get book with invalid ISBN | ✅ |
+| | Add book without token | ✅ |
+| | Add duplicate book to collection | ✅ |
+| | Update book with invalid ISBN | ✅ |
+| | Delete book without token | ✅ |
 
 ---
 
@@ -96,19 +113,21 @@ Pipeline flow:
 ```
 Checkout Repository
    |
-Setup Python
+Setup Python Environment
    |
 Install Dependencies
    |
 Install Allure CLI
    |
-Execute API Tests
+Run API Tests
    |
 Generate Allure Report
    |
 Deploy Allure Report to GitHub Pages
    |
 Upload Test Artifacts & Logs
+   |
+Send Test Summary Notification to Telegram
 ```
 #### Latest Execution Status:
 [![Bookstore API Automation](https://github.com/maolanahadiar/book-store-api-automation-framework/actions/workflows/api-test.yml/badge.svg)](https://github.com/maolanahadiar/bookstore-api-automation-framework/actions/workflows/api-test.yml)

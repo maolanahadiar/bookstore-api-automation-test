@@ -1,0 +1,41 @@
+[32mINFO    [0m AccountService:api_client.py:25 ================================================================================
+[32mINFO    [0m AccountService:api_client.py:26 POST https://demoqa.com/Account/v1/User
+[32mINFO    [0m AccountService:api_client.py:35 Request Body:
+{
+    "userName": "bethany55753662",
+    "password": "5y%&UXEB9apY"
+}
+[32mINFO    [0m AccountService:api_client.py:54 Status Code : 201
+[32mINFO    [0m AccountService:api_client.py:57 Response Body:
+{
+    "userID": "b0ea7cb3-3d18-4423-a0fa-59de10f816fa",
+    "username": "bethany55753662",
+    "books": []
+}
+[32mINFO    [0m AccountService:api_client.py:67 ================================================================================
+[32mINFO    [0m AccountService:api_client.py:25 ================================================================================
+[32mINFO    [0m AccountService:api_client.py:26 POST https://demoqa.com/Account/v1/GenerateToken
+[32mINFO    [0m AccountService:api_client.py:35 Request Body:
+{
+    "userName": "bethany55753662",
+    "password": "5y%&UXEB9apY"
+}
+[32mINFO    [0m AccountService:api_client.py:54 Status Code : 200
+[32mINFO    [0m AccountService:api_client.py:57 Response Body:
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImJldGhhbnk1NTc1MzY2MiIsInBhc3N3b3JkIjoiNXklJlVYRUI5YXBZIiwiaWF0IjoxNzg2MzU2MDQ3fQ.kBUL3KTYQORV9vkA469xJ_wW-fLqrt7JuTJ9Xwln7zY",
+    "expires": "2026-08-17T10:00:47.449Z",
+    "status": "Success",
+    "result": "User authorized successfully."
+}
+[32mINFO    [0m AccountService:api_client.py:67 ================================================================================
+[32mINFO    [0m AccountService:api_client.py:25 ================================================================================
+[32mINFO    [0m AccountService:api_client.py:26 DELETE https://demoqa.com/Account/v1/User/b0ea7cb3-3d18-4423-a0fa-59de10f816fa
+[32mINFO    [0m AccountService:api_client.py:41 Headers:
+{
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImJldGhhbnk1NTc1MzY2MiIsInBhc3N3b3JkIjoiNXklJlVYRUI5YXBZIiwiaWF0IjoxNzg2MzU2MDQ3fQ.kBUL3KTYQORV9vkA469xJ_wW-fLqrt7JuTJ9Xwln7zY"
+}
+[32mINFO    [0m AccountService:api_client.py:54 Status Code : 204
+[32mINFO    [0m AccountService:api_client.py:62 Response Body:
+
+[32mINFO    [0m AccountService:api_client.py:67 ================================================================================

@@ -47,7 +47,7 @@ class AllureHelper:
                     f"{os.getenv('GITHUB_REPOSITORY', '')}/actions/runs/"
                     f"{os.getenv('GITHUB_RUN_ID', '')}"
                 ),
-                "reportName": "Bookstore API Automation Report",
+                "reportName": "Bookstore API Automation Test Report",
             }
         else:
             executor = {
@@ -55,7 +55,7 @@ class AllureHelper:
                 "type": "local",
                 "buildName": "Manual Execution",
                 "buildOrder": 1,
-                "reportName": "Bookstore API Automation Report",
+                "reportName": "Bookstore API Automation Test Report",
             }
 
         with open(

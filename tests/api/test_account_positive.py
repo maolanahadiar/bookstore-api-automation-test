@@ -1,4 +1,5 @@
 import allure
+from assertpy import assert_that
 from http import HTTPStatus
 from services.account_service import AccountService
 from utils.data_generator import DataGenerator
@@ -20,17 +21,17 @@ def test_register_success():
         )
         
     with allure.step("Verify response status code"):
-        assert response.status_code == HTTPStatus.CREATED
+        assert_that(response.status_code).is_equal_to(HTTPStatus.CREATED)
         
     with allure.step("Verify response body"):
         body = response.json()
         
-        assert "userID" in body
-        assert body["username"] == username
+        assert_that(body).contains_key("userID")
+        assert_that(body["username"]).is_equal_to(username)
         
     with allure.step("Verify response data type"):
-        assert isinstance(body["userID"], str)
-        assert isinstance(body["username"], str)
+        assert_that(body["userID"]).is_instance_of(str)
+        assert_that(body["username"]).is_instance_of(str)
         
 @allure.title("User can login with valid credential successfully")        
 def test_login_success(created_user):
@@ -42,7 +43,7 @@ def test_login_success(created_user):
         )
 
     with allure.step("Verify response status code"):
-        assert response.status_code == HTTPStatus.OK
+        assert_that(response.status_code).is_equal_to(HTTPStatus.OK)
 
 @allure.title("User can generate token successfully")        
 def test_generate_token_success(created_user):
@@ -54,17 +55,17 @@ def test_generate_token_success(created_user):
         )
         
     with allure.step("Verify response status code"):
-        assert response.status_code == HTTPStatus.OK
+        assert_that(response.status_code).is_equal_to(HTTPStatus.OK)
         
     with allure.step("Verify response body"):
         body = response.json()
         
-        assert body["status"] == EXPECTED_MESSAGES["token_success"]["status"]
-        assert body["result"] == EXPECTED_MESSAGES["token_success"]["result"]
+        assert_that(body["status"]).is_equal_to(EXPECTED_MESSAGES["token_success"]["status"])
+        assert_that(body["result"]).is_equal_to(EXPECTED_MESSAGES["token_success"]["result"])
     
     with allure.step("Verify response data type"):
-        assert isinstance(body["token"], str)
-        assert isinstance(body["expires"], str)
+        assert_that(body["token"]).is_instance_of(str)
+        assert_that(body["expires"]).is_instance_of(str)
         
 @allure.title("User can get account detail succesfully")        
 def test_account_detail_success(created_user, user_token):
@@ -76,17 +77,17 @@ def test_account_detail_success(created_user, user_token):
         )
     
     with allure.step("Verify response status code"):
-        assert response.status_code == HTTPStatus.OK
+        assert_that(response.status_code).is_equal_to(HTTPStatus.OK)
         
     with allure.step("Verify response body"):
         body = response.json()
-
-        assert "userId" in body
-        assert body["username"] == created_user["username"]
+        
+        assert_that(body).contains_key("userId")
+        assert_that(body["username"]).is_equal_to(created_user["username"])
         
     with allure.step("Verify response data type"):
-        assert isinstance(body["userId"], str)
-        assert isinstance(body["username"], str)
+        assert_that(body["userId"]).is_instance_of(str)
+        assert_that(body["username"]).is_instance_of(str)
         
 @allure.title("User can delete account successfully")        
 def test_delete_account_success(delete_user, delete_user_token):
@@ -98,4 +99,4 @@ def test_delete_account_success(delete_user, delete_user_token):
         )
 
     with allure.step("Verify response status code"):
-        assert response.status_code == HTTPStatus.NO_CONTENT
+        assert_that(response.status_code).is_equal_to(HTTPStatus.NO_CONTENT)

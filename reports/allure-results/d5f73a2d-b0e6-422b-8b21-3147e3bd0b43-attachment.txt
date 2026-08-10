@@ -1,0 +1,15 @@
+[32mINFO    [0m BookStoreService:api_client.py:25 ================================================================================
+[32mINFO    [0m BookStoreService:api_client.py:26 DELETE https://demoqa.com/BookStore/v1/Book
+[32mINFO    [0m BookStoreService:api_client.py:35 Request Body:
+{
+    "userId": "b9e66df6-84bd-4eb3-b47f-e857e6331ab7",
+    "isbn": "9781449325862"
+}
+[32mINFO    [0m BookStoreService:api_client.py:41 Headers:
+{
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6IndoaXRha2VyamFtZXM0NDAyNzYiLCJwYXNzd29yZCI6Il5qVlcyYzlUaWR5SiIsImlhdCI6MTc4NjM1ODczOH0.U4e_SqAa733PCN6ALLvoKEfApy0JtIrll3iygtltHh8"
+}
+[32mINFO    [0m BookStoreService:api_client.py:54 Status Code : 204
+[32mINFO    [0m BookStoreService:api_client.py:62 Response Body:
+
+[32mINFO    [0m BookStoreService:api_client.py:67 ================================================================================

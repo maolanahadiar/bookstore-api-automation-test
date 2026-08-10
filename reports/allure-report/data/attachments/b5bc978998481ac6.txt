@@ -1,0 +1,18 @@
+[32mINFO    [0m BookStoreService:api_client.py:25 ================================================================================
+[32mINFO    [0m BookStoreService:api_client.py:26 PUT https://demoqa.com/BookStore/v1/Books/9781449331818
+[32mINFO    [0m BookStoreService:api_client.py:35 Request Body:
+{
+    "userId": "9cd3c357-cfda-4136-b9b4-63902ce0aff0",
+    "isbn": "123asd4567891011"
+}
+[32mINFO    [0m BookStoreService:api_client.py:41 Headers:
+{
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InNtaXRoa2VsbHk3NDMxNjIiLCJwYXNzd29yZCI6Im5GazgkcXozQ2xiWCIsImlhdCI6MTc4NjM1NjA0M30.bEwsmKZCJEn2tsOTz9q5f5lmILtDP_1Mo-wGPdO6MOI"
+}
+[32mINFO    [0m BookStoreService:api_client.py:54 Status Code : 400
+[32mINFO    [0m BookStoreService:api_client.py:57 Response Body:
+{
+    "code": "1205",
+    "message": "ISBN supplied is not available in Books Collection!"
+}
+[32mINFO    [0m BookStoreService:api_client.py:67 ================================================================================
