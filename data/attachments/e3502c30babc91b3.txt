@@ -2,7 +2,7 @@ INFO     BookStoreService:api_client.py:25 =====================================
 INFO     BookStoreService:api_client.py:26 POST https://demoqa.com/BookStore/v1/Books
 INFO     BookStoreService:api_client.py:35 Request Body:
 {
-    "userId": "ee4dbcbb-f27b-487a-a739-868e698cb359",
+    "userId": "1c8413f7-7173-4683-b4c9-d8e769f7f752",
     "collectionOfIsbns": [
         {
             "isbn": "9781449331818"
@@ -11,15 +11,12 @@ INFO     BookStoreService:api_client.py:35 Request Body:
 }
 INFO     BookStoreService:api_client.py:41 Headers:
 {
-    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InNhbmRyYTUxNTU0NTEzIiwicGFzc3dvcmQiOiJaYUtGMWckXmJhJDciLCJpYXQiOjE3ODYzNDI1MTl9.eknzpZQpAPKnsPhXy3X2ev_piHz28JugRNdfPBo_ZN8"
+    "Authorization": "Bearer "
 }
-INFO     BookStoreService:api_client.py:54 Status Code : 201
+INFO     BookStoreService:api_client.py:54 Status Code : 401
 INFO     BookStoreService:api_client.py:57 Response Body:
 {
-    "books": [
-        {
-            "isbn": "9781449331818"
-        }
-    ]
+    "code": "1200",
+    "message": "User not authorized!"
 }
 INFO     BookStoreService:api_client.py:67 ================================================================================

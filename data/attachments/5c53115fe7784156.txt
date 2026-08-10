@@ -2,29 +2,29 @@ INFO     AccountService:api_client.py:25 =======================================
 INFO     AccountService:api_client.py:26 POST https://demoqa.com/Account/v1/GenerateToken
 INFO     AccountService:api_client.py:35 Request Body:
 {
-    "userName": "sandra51554513",
-    "password": "ZaKF1g$^ba$7"
+    "userName": "miguelsmith726348",
+    "password": "y2&%1wf6YHjc"
 }
 INFO     AccountService:api_client.py:54 Status Code : 200
 INFO     AccountService:api_client.py:57 Response Body:
 {
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InNhbmRyYTUxNTU0NTEzIiwicGFzc3dvcmQiOiJaYUtGMWckXmJhJDciLCJpYXQiOjE3ODYzNDI1MTl9.eknzpZQpAPKnsPhXy3X2ev_piHz28JugRNdfPBo_ZN8",
-    "expires": "2026-08-17T06:15:19.244Z",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6Im1pZ3VlbHNtaXRoNzI2MzQ4IiwicGFzc3dvcmQiOiJ5MiYlMXdmNllIamMiLCJpYXQiOjE3ODYzNjEzODh9.6KxaaXG4qKVjw0bbmXRXI7vXBGfmKBu1ex-C76l2_6A",
+    "expires": "2026-08-17T11:29:48.118Z",
     "status": "Success",
     "result": "User authorized successfully."
 }
 INFO     AccountService:api_client.py:67 ================================================================================
 INFO     AccountService:api_client.py:25 ================================================================================
-INFO     AccountService:api_client.py:26 GET https://demoqa.com/Account/v1/User/ee4dbcbb-f27b-487a-a739-868e698cb359
+INFO     AccountService:api_client.py:26 GET https://demoqa.com/Account/v1/User/1c8413f7-7173-4683-b4c9-d8e769f7f752
 INFO     AccountService:api_client.py:41 Headers:
 {
-    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InNhbmRyYTUxNTU0NTEzIiwicGFzc3dvcmQiOiJaYUtGMWckXmJhJDciLCJpYXQiOjE3ODYzNDI1MTl9.eknzpZQpAPKnsPhXy3X2ev_piHz28JugRNdfPBo_ZN8"
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6Im1pZ3VlbHNtaXRoNzI2MzQ4IiwicGFzc3dvcmQiOiJ5MiYlMXdmNllIamMiLCJpYXQiOjE3ODYzNjEzODh9.6KxaaXG4qKVjw0bbmXRXI7vXBGfmKBu1ex-C76l2_6A"
 }
 INFO     AccountService:api_client.py:54 Status Code : 200
 INFO     AccountService:api_client.py:57 Response Body:
 {
-    "userId": "ee4dbcbb-f27b-487a-a739-868e698cb359",
-    "username": "sandra51554513",
+    "userId": "1c8413f7-7173-4683-b4c9-d8e769f7f752",
+    "username": "miguelsmith726348",
     "books": []
 }
 INFO     AccountService:api_client.py:67 ================================================================================
