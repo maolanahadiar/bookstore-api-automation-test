@@ -2,14 +2,14 @@ INFO     AccountService:api_client.py:25 =======================================
 INFO     AccountService:api_client.py:26 POST https://demoqa.com/Account/v1/User
 INFO     AccountService:api_client.py:35 Request Body:
 {
-    "userName": "ronaldwhitehead949737",
-    "password": "8^#ALyhout3p"
+    "userName": "kimberlytaylor767718",
+    "password": "d!WbMySHZ2Eg"
 }
 INFO     AccountService:api_client.py:54 Status Code : 201
 INFO     AccountService:api_client.py:57 Response Body:
 {
-    "userID": "b462ab2b-83f7-4f0a-bdca-3e81634e360e",
-    "username": "ronaldwhitehead949737",
+    "userID": "0fa36a9b-a768-46f4-8c2b-4d6121044b2a",
+    "username": "kimberlytaylor767718",
     "books": []
 }
 INFO     AccountService:api_client.py:67 ================================================================================
@@ -17,18 +17,18 @@ INFO     AccountService:api_client.py:25 =======================================
 INFO     AccountService:api_client.py:26 POST https://demoqa.com/Account/v1/Login
 INFO     AccountService:api_client.py:35 Request Body:
 {
-    "userName": "ronaldwhitehead949737",
-    "password": "8^#ALyhout3p"
+    "userName": "kimberlytaylor767718",
+    "password": "d!WbMySHZ2Eg"
 }
 INFO     AccountService:api_client.py:54 Status Code : 200
 INFO     AccountService:api_client.py:57 Response Body:
 {
-    "userId": "b462ab2b-83f7-4f0a-bdca-3e81634e360e",
-    "username": "ronaldwhitehead949737",
-    "password": "8^#ALyhout3p",
+    "userId": "0fa36a9b-a768-46f4-8c2b-4d6121044b2a",
+    "username": "kimberlytaylor767718",
+    "password": "d!WbMySHZ2Eg",
     "token": null,
     "expires": null,
-    "created_date": "2026-08-10T12:11:42.000Z",
+    "created_date": "2026-08-10T12:57:22.000Z",
     "isActive": false
 }
 INFO     AccountService:api_client.py:67 ================================================================================

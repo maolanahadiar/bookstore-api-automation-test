@@ -2,14 +2,14 @@ INFO     AccountService:api_client.py:25 =======================================
 INFO     AccountService:api_client.py:26 POST https://demoqa.com/Account/v1/User
 INFO     AccountService:api_client.py:35 Request Body:
 {
-    "userName": "uchoi443538",
-    "password": "n36j$sZJ0vZz"
+    "userName": "eryan961663",
+    "password": "z#^2$Avxgr9g"
 }
 INFO     AccountService:api_client.py:54 Status Code : 201
 INFO     AccountService:api_client.py:57 Response Body:
 {
-    "userID": "e3f3aa77-1b06-484d-a8eb-c8810a6fa9fb",
-    "username": "uchoi443538",
+    "userID": "c4bcdd90-fa33-48d2-8f29-00eca127fb43",
+    "username": "eryan961663",
     "books": []
 }
 INFO     AccountService:api_client.py:67 ================================================================================
