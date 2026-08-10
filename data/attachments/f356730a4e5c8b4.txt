@@ -2,14 +2,14 @@ INFO     AccountService:api_client.py:25 =======================================
 INFO     AccountService:api_client.py:26 POST https://demoqa.com/Account/v1/User
 INFO     AccountService:api_client.py:35 Request Body:
 {
-    "userName": "cisneroscarrie912912",
-    "password": "Vd!wRK!80fdY"
+    "userName": "amanda65750007",
+    "password": "aXF5mPub%jg&"
 }
 INFO     AccountService:api_client.py:54 Status Code : 201
 INFO     AccountService:api_client.py:57 Response Body:
 {
-    "userID": "ba9631cb-4ea0-451b-9de6-708bf4994511",
-    "username": "cisneroscarrie912912",
+    "userID": "18d9dcca-2e4e-449f-8d5e-90b5b5abc066",
+    "username": "amanda65750007",
     "books": []
 }
 INFO     AccountService:api_client.py:67 ================================================================================
@@ -17,23 +17,23 @@ INFO     AccountService:api_client.py:25 =======================================
 INFO     AccountService:api_client.py:26 POST https://demoqa.com/Account/v1/GenerateToken
 INFO     AccountService:api_client.py:35 Request Body:
 {
-    "userName": "cisneroscarrie912912",
-    "password": "Vd!wRK!80fdY"
+    "userName": "amanda65750007",
+    "password": "aXF5mPub%jg&"
 }
 INFO     AccountService:api_client.py:54 Status Code : 200
 INFO     AccountService:api_client.py:57 Response Body:
 {
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImNpc25lcm9zY2FycmllOTEyOTEyIiwicGFzc3dvcmQiOiJWZCF3UkshODBmZFkiLCJpYXQiOjE3ODYzNjY2NDd9.CWzCYSlWxJTKH1C5Fi5EEWh0gZ8oEaMKZhv49fVbevo",
-    "expires": "2026-08-17T12:57:27.748Z",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImFtYW5kYTY1NzUwMDA3IiwicGFzc3dvcmQiOiJhWEY1bVB1YiVqZyYiLCJpYXQiOjE3ODYzNzAyNzZ9.a1QonJbXoEU5i8dvtEn67PEsi6L7tuYL8kMEHHpvA_I",
+    "expires": "2026-08-17T13:57:56.028Z",
     "status": "Success",
     "result": "User authorized successfully."
 }
 INFO     AccountService:api_client.py:67 ================================================================================
 INFO     AccountService:api_client.py:25 ================================================================================
-INFO     AccountService:api_client.py:26 DELETE https://demoqa.com/Account/v1/User/ba9631cb-4ea0-451b-9de6-708bf4994511
+INFO     AccountService:api_client.py:26 DELETE https://demoqa.com/Account/v1/User/18d9dcca-2e4e-449f-8d5e-90b5b5abc066
 INFO     AccountService:api_client.py:41 Headers:
 {
-    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImNpc25lcm9zY2FycmllOTEyOTEyIiwicGFzc3dvcmQiOiJWZCF3UkshODBmZFkiLCJpYXQiOjE3ODYzNjY2NDd9.CWzCYSlWxJTKH1C5Fi5EEWh0gZ8oEaMKZhv49fVbevo"
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImFtYW5kYTY1NzUwMDA3IiwicGFzc3dvcmQiOiJhWEY1bVB1YiVqZyYiLCJpYXQiOjE3ODYzNzAyNzZ9.a1QonJbXoEU5i8dvtEn67PEsi6L7tuYL8kMEHHpvA_I"
 }
 INFO     AccountService:api_client.py:54 Status Code : 204
 INFO     AccountService:api_client.py:62 Response Body:
