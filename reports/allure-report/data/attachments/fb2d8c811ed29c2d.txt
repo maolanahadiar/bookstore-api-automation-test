@@ -1,0 +1,34 @@
+[32mINFO    [0m AccountService:api_client.py:25 ================================================================================
+[32mINFO    [0m AccountService:api_client.py:26 POST https://demoqa.com/Account/v1/User
+[32mINFO    [0m AccountService:api_client.py:35 Request Body:
+{
+    "userName": "ucook476186",
+    "password": "jbJvf6ZJ0*tR"
+}
+[32mINFO    [0m AccountService:api_client.py:54 Status Code : 201
+[32mINFO    [0m AccountService:api_client.py:57 Response Body:
+{
+    "userID": "ff316f7e-df5a-4214-9bfa-7797dad9a52e",
+    "username": "ucook476186",
+    "books": []
+}
+[32mINFO    [0m AccountService:api_client.py:67 ================================================================================
+[32mINFO    [0m AccountService:api_client.py:25 ================================================================================
+[32mINFO    [0m AccountService:api_client.py:26 POST https://demoqa.com/Account/v1/Login
+[32mINFO    [0m AccountService:api_client.py:35 Request Body:
+{
+    "userName": "ucook476186",
+    "password": "jbJvf6ZJ0*tR"
+}
+[32mINFO    [0m AccountService:api_client.py:54 Status Code : 200
+[32mINFO    [0m AccountService:api_client.py:57 Response Body:
+{
+    "userId": "ff316f7e-df5a-4214-9bfa-7797dad9a52e",
+    "username": "ucook476186",
+    "password": "jbJvf6ZJ0*tR",
+    "token": null,
+    "expires": null,
+    "created_date": "2026-08-10T05:24:47.000Z",
+    "isActive": false
+}
+[32mINFO    [0m AccountService:api_client.py:67 ================================================================================

@@ -1,1 +1,1 @@
-{"reportName":"Bookstore API Automation Report","testRuns":[],"statistic":{"failed":0,"broken":0,"skipped":0,"passed":2,"unknown":0,"total":2},"time":{"start":1786035512715,"stop":1786035515955,"duration":3240,"minDuration":1182,"maxDuration":2052,"sumDuration":3234}}
+{"reportName":"Bookstore API Automation Report","testRuns":[],"statistic":{"failed":0,"broken":0,"skipped":0,"passed":15,"unknown":0,"total":15},"time":{"start":1786339483988,"stop":1786339501553,"duration":17565,"minDuration":182,"maxDuration":2182,"sumDuration":12940}}

@@ -2,14 +2,14 @@
 [32mINFO    [0m AccountService:api_client.py:26 POST https://demoqa.com/Account/v1/GenerateToken
 [32mINFO    [0m AccountService:api_client.py:35 Request Body:
 {
-    "userName": "arichardson140213",
-    "password": "!L8xup^#pg#Q"
+    "userName": "ucook476186",
+    "password": "jbJvf6ZJ0*tR"
 }
 [32mINFO    [0m AccountService:api_client.py:54 Status Code : 200
 [32mINFO    [0m AccountService:api_client.py:57 Response Body:
 {
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImFyaWNoYXJkc29uMTQwMjEzIiwicGFzc3dvcmQiOiIhTDh4dXBeI3BnI1EiLCJpYXQiOjE3ODYwMzU1MTV9.47vxyHJZ59Z7wlXA37w5iwahGG1Lt6sAC8LwrDHzyOA",
-    "expires": "2026-08-13T16:58:35.002Z",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InVjb29rNDc2MTg2IiwicGFzc3dvcmQiOiJqYkp2ZjZaSjAqdFIiLCJpYXQiOjE3ODYzMzk0ODh9.UcA0_aYtk6WTDmN7OqDePtS4uKvLkIU0oSYb8Pn-Xw4",
+    "expires": "2026-08-17T05:24:48.416Z",
     "status": "Success",
     "result": "User authorized successfully."
 }

@@ -1,5 +1,5 @@
 from clients.api_client import ApiClient
-from config.settings import BOOKS_URL, BOOK_DETAIL_URL
+from config.settings import BASE_URL
 
 class BookStoreService(ApiClient):
 
@@ -7,14 +7,14 @@ class BookStoreService(ApiClient):
         """Retrieve the list of all available books"""
         
         return self.get(
-            url=BOOKS_URL,
+            url=f"{BASE_URL}/BookStore/v1/Books",
         )
 
     def get_book_by_isbn(self, isbn):
         """Retrieve specific book by using ISBN"""
         
         return self.get(
-            url=BOOK_DETAIL_URL,
+            url=f"{BASE_URL}/BookStore/v1/Book",
             params={
                 "ISBN": isbn,
             },
@@ -37,13 +37,13 @@ class BookStoreService(ApiClient):
         }
         
         return self.post(
-            url=BOOKS_URL,
+            url=f"{BASE_URL}/BookStore/v1/Books",
             headers=headers,
             json=payload,
         )
 
     def update_book(self, existing_isbn, user_id, new_isbn, token):
-        """Replace an existing book in the user's collection"""
+        """Update an existing book in the user's collection"""
 
         headers = {
             "Authorization": f"Bearer {token}"
@@ -55,7 +55,7 @@ class BookStoreService(ApiClient):
         }
         
         return self.put(
-            url=f"{BOOKS_URL}/{existing_isbn}",
+            url=f"{f"{BASE_URL}/BookStore/v1/Books"}/{existing_isbn}",
             headers=headers,
             json=payload,
         )
@@ -73,7 +73,7 @@ class BookStoreService(ApiClient):
         }
         
         return self.delete(
-            url=BOOK_DETAIL_URL,
+            url=f"{BASE_URL}/BookStore/v1/Book",
             headers=headers,
             json=payload,
         )

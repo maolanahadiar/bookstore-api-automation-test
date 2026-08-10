@@ -1,7 +1,3 @@
-import pytest
-from http import HTTPStatus
-from services.bookstore_service import BookStoreService
-from services.account_service import AccountService
 from utils.allure_helper import AllureHelper
 from config.settings import AUTO_OPEN_REPORT
 
@@ -30,22 +26,6 @@ def pytest_sessionfinish(session, exitstatus):
 
         AllureHelper.open_report(REPORT_DIR)
         
-@pytest.fixture(scope="session")
-def book_service():
-    return BookStoreService()
-
-@pytest.fixture(scope="session")
-def account_service():
-    return AccountService()
-
-@pytest.fixture(scope="session")
-def auth_token(account_service, created_user):
-
-    response = account_service.generate_token(
-        username=created_user["username"],
-        password=created_user["password"],
-    )
-
-    assert response.status_code == HTTPStatus.OK
-
-    return response.json()["token"]
+pytest_plugins = [
+    "fixtures.account_fixtures"
+]

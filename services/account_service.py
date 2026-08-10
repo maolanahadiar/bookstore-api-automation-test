@@ -1,33 +1,23 @@
 from clients.api_client import ApiClient
-from config.settings import REGISTER_URL, LOGIN_URL, ACCOUNT_DETAIL_URL, GENERATE_TOKEN_URL
+from config.settings import BASE_URL
 
 class AccountService(ApiClient):
     
     def register(self, username, password):
-        
+        """Register a new user account"""
+
         payload = {
             "userName": username,
             "password": password
         }
         
         return self.post(
-            url=REGISTER_URL,
-            json=payload
-        )
-    
-    def generate_token(self, username, password):
-        
-        payload = {
-            "userName": username,
-            "password": password
-        }
-        
-        return self.post(
-            url=GENERATE_TOKEN_URL,
+            url=f"{BASE_URL}/Account/v1/User",
             json=payload
         )
         
     def login(self, username, password):
+        """Log in with user credentials"""
         
         payload = {
             "userName": username,
@@ -35,17 +25,43 @@ class AccountService(ApiClient):
         }
         
         return self.post(
-            url=LOGIN_URL,
+            url=f"{BASE_URL}/Account/v1/Login",
             json=payload
         )
         
-    def account_detail(self, user_id, token):
+    def generate_token(self, username, password):
+        """Generate an authentication token"""
+        
+        payload = {
+            "userName": username,
+            "password": password
+        }
+        
+        return self.post(
+            url=f"{BASE_URL}/Account/v1/GenerateToken",
+            json=payload
+        )
+        
+    def get_account(self, user_id, token):
+        """Get account details for a user"""
         
         headers = {
             "Authorization": f"Bearer {token}"
         }
         
         return self.get(
-            url=f"{ACCOUNT_DETAIL_URL}/{user_id}",
+            url=f"{BASE_URL}/Account/v1/User/{user_id}",
+            headers=headers
+        )
+        
+    def delete_account(self, user_id, token):
+        """Delete a user account"""
+        
+        headers = {
+            "Authorization": f"Bearer {token}"
+        }
+        
+        return self.delete(
+            url=f"{BASE_URL}/Account/v1/User/{user_id}",
             headers=headers
         )

@@ -10,6 +10,6 @@ BOOKS = {
         "author": "Richard E. Silverman"
     },
     "invalid":{
-        "isbn": "1234567891011"
+        "isbn": "123asd4567891011"
     }
 }
