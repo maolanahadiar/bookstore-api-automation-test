@@ -1,13 +1,17 @@
 INFO     BookStoreService:api_client.py:25 ================================================================================
-INFO     BookStoreService:api_client.py:26 DELETE https://demoqa.com/BookStore/v1/Book
+INFO     BookStoreService:api_client.py:26 POST https://demoqa.com/BookStore/v1/Books
 INFO     BookStoreService:api_client.py:35 Request Body:
 {
-    "userId": "c4eea796-9f9a-4800-b3e6-0336f04fef86",
-    "isbn": "9781449325862"
+    "userId": "e1b4d526-128f-4144-926a-918b7566391c",
+    "collectionOfIsbns": [
+        {
+            "isbn": "9781449331818"
+        }
+    ]
 }
 INFO     BookStoreService:api_client.py:41 Headers:
 {
-    "Authorization": "Bearer invalidsdhfj23h2j32hjasjd23adsasdj23234wewq"
+    "Authorization": "Bearer "
 }
 INFO     BookStoreService:api_client.py:54 Status Code : 401
 INFO     BookStoreService:api_client.py:57 Response Body:
