@@ -2,14 +2,14 @@ INFO     AccountService:api_client.py:25 =======================================
 INFO     AccountService:api_client.py:26 POST https://demoqa.com/Account/v1/GenerateToken
 INFO     AccountService:api_client.py:35 Request Body:
 {
-    "userName": "lturner926823",
-    "password": "VvR#A&mrXFK5"
+    "userName": "yboyle625946",
+    "password": "oyySk96y*@Ve"
 }
 INFO     AccountService:api_client.py:54 Status Code : 200
 INFO     AccountService:api_client.py:57 Response Body:
 {
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6Imx0dXJuZXI5MjY4MjMiLCJwYXNzd29yZCI6IlZ2UiNBJm1yWEZLNSIsImlhdCI6MTc4NjM3MDI3MX0.3QtCvejQjafBOTmvnycQYhOqArQJHtpFFWoYTTH8TpM",
-    "expires": "2026-08-17T13:57:51.386Z",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6Inlib3lsZTYyNTk0NiIsInBhc3N3b3JkIjoib3l5U2s5NnkqQFZlIiwiaWF0IjoxNzg2NDA5MTQ3fQ.i9XXKV5d54bG6M4c9HcqNY7zbpGEHjCEJata6A3701s",
+    "expires": "2026-08-18T00:45:47.645Z",
     "status": "Success",
     "result": "User authorized successfully."
 }

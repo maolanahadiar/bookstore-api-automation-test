@@ -2,14 +2,14 @@ INFO     AccountService:api_client.py:25 =======================================
 INFO     AccountService:api_client.py:26 POST https://demoqa.com/Account/v1/User
 INFO     AccountService:api_client.py:35 Request Body:
 {
-    "userName": "jamieshaw548626",
-    "password": "NcxGl5$g8xC4"
+    "userName": "derrickdennis262409",
+    "password": "5**nzXP^Ufsl"
 }
 INFO     AccountService:api_client.py:54 Status Code : 201
 INFO     AccountService:api_client.py:57 Response Body:
 {
-    "userID": "665fb91b-6526-4305-9e54-15c9697f5e6f",
-    "username": "jamieshaw548626",
+    "userID": "6e026193-f26b-436c-98c3-dd94f24fb943",
+    "username": "derrickdennis262409",
     "books": []
 }
 INFO     AccountService:api_client.py:67 ================================================================================
