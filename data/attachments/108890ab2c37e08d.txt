@@ -1,0 +1,26 @@
+INFO     AccountService:api_client.py:25 ================================================================================
+INFO     AccountService:api_client.py:26 POST https://demoqa.com/Account/v1/User
+INFO     AccountService:api_client.py:35 Request Body:
+{
+    "userName": "ashleyhenderson693549",
+    "password": "$GCn6z#W2f%5"
+}
+INFO     AccountService:api_client.py:54 Status Code : 201
+INFO     AccountService:api_client.py:57 Response Body:
+{
+    "userID": "14142777-3e0a-4f57-8f90-eb1390359b8b",
+    "username": "ashleyhenderson693549",
+    "books": []
+}
+INFO     AccountService:api_client.py:67 ================================================================================
+INFO     AccountService:api_client.py:25 ================================================================================
+INFO     AccountService:api_client.py:26 POST https://demoqa.com/Account/v1/Authorized
+INFO     AccountService:api_client.py:35 Request Body:
+{
+    "userName": "ashleyhenderson693549",
+    "password": "$GCn6z#W2f%5"
+}
+INFO     AccountService:api_client.py:54 Status Code : 200
+INFO     AccountService:api_client.py:57 Response Body:
+false
+INFO     AccountService:api_client.py:67 ================================================================================
