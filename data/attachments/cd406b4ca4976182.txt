@@ -2,14 +2,14 @@ INFO     AccountService:api_client.py:25 =======================================
 INFO     AccountService:api_client.py:26 POST https://demoqa.com/Account/v1/User
 INFO     AccountService:api_client.py:35 Request Body:
 {
-    "userName": "mary88474487",
-    "password": "8E$&haSfdexW"
+    "userName": "paulcox471058",
+    "password": "#XF0pIyhmA6u"
 }
 INFO     AccountService:api_client.py:54 Status Code : 201
 INFO     AccountService:api_client.py:57 Response Body:
 {
-    "userID": "601884b0-a751-4c1c-a605-234d24f199de",
-    "username": "mary88474487",
+    "userID": "e371ea5b-8e18-4c76-8f5d-e1c0f2595985",
+    "username": "paulcox471058",
     "books": []
 }
 INFO     AccountService:api_client.py:67 ================================================================================

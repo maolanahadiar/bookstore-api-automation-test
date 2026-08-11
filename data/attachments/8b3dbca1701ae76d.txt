@@ -2,14 +2,14 @@ INFO     AccountService:api_client.py:25 =======================================
 INFO     AccountService:api_client.py:26 POST https://demoqa.com/Account/v1/User
 INFO     AccountService:api_client.py:35 Request Body:
 {
-    "userName": "kelsey49738736",
-    "password": "0l%O*En8QN5Z"
+    "userName": "stevensjason288188",
+    "password": "HNFYa^hTU9Jq"
 }
 INFO     AccountService:api_client.py:54 Status Code : 201
 INFO     AccountService:api_client.py:57 Response Body:
 {
-    "userID": "e1b4d526-128f-4144-926a-918b7566391c",
-    "username": "kelsey49738736",
+    "userID": "a7da2ba1-6442-4c6a-8be7-1715c2864f77",
+    "username": "stevensjason288188",
     "books": []
 }
 INFO     AccountService:api_client.py:67 ================================================================================
@@ -17,18 +17,18 @@ INFO     AccountService:api_client.py:25 =======================================
 INFO     AccountService:api_client.py:26 POST https://demoqa.com/Account/v1/Login
 INFO     AccountService:api_client.py:35 Request Body:
 {
-    "userName": "kelsey49738736",
-    "password": "0l%O*En8QN5Z"
+    "userName": "stevensjason288188",
+    "password": "HNFYa^hTU9Jq"
 }
 INFO     AccountService:api_client.py:54 Status Code : 200
 INFO     AccountService:api_client.py:57 Response Body:
 {
-    "userId": "e1b4d526-128f-4144-926a-918b7566391c",
-    "username": "kelsey49738736",
-    "password": "0l%O*En8QN5Z",
+    "userId": "a7da2ba1-6442-4c6a-8be7-1715c2864f77",
+    "username": "stevensjason288188",
+    "password": "HNFYa^hTU9Jq",
     "token": null,
     "expires": null,
-    "created_date": "2026-08-11T02:21:44.000Z",
+    "created_date": "2026-08-11T03:12:53.000Z",
     "isActive": false
 }
 INFO     AccountService:api_client.py:67 ================================================================================
