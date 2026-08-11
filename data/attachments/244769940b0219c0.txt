@@ -1,15 +1,14 @@
 INFO     AccountService:api_client.py:25 ================================================================================
-INFO     AccountService:api_client.py:26 POST https://demoqa.com/Account/v1/User
+INFO     AccountService:api_client.py:26 POST https://demoqa.com/Account/v1/Authorized
 INFO     AccountService:api_client.py:35 Request Body:
 {
-    "userName": "paulcox471058",
-    "password": "#XF0pIyhmA6u"
+    "userName": "wiwokdetok",
+    "password": "notonle"
 }
-INFO     AccountService:api_client.py:54 Status Code : 201
+INFO     AccountService:api_client.py:54 Status Code : 404
 INFO     AccountService:api_client.py:57 Response Body:
 {
-    "userID": "e371ea5b-8e18-4c76-8f5d-e1c0f2595985",
-    "username": "paulcox471058",
-    "books": []
+    "code": "1207",
+    "message": "User not found!"
 }
 INFO     AccountService:api_client.py:67 ================================================================================
