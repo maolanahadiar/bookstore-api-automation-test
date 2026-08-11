@@ -25,7 +25,7 @@ class AccountService(ApiClient):
         }
         
         return self.post(
-            url=f"{BASE_URL}/Account/v1/Login",
+            url=f"{BASE_URL}/Account/v1/Authorized",
             json=payload
         )
         

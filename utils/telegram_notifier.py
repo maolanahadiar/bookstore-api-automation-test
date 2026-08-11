@@ -7,8 +7,12 @@ JUNIT_FILE = Path("reports/junit.xml")
 
 def get_test_results():
     """Read test results from JUnit XML report"""
+    
+    tree = ET.parse(JUNIT_FILE)
+    root = tree.getroot()
 
-    root = ET.parse(JUNIT_FILE).getroot()
+    if root.tag == "testsuites":
+        root = root.find("testsuite")
 
     total = int(root.attrib.get("tests", 0))
     failures = int(root.attrib.get("failures", 0))
@@ -39,7 +43,6 @@ def get_test_results():
         "failed_tests": failed_tests,
     }
 
-
 def build_message(results):
     """Build Telegram Test Report message"""
 
@@ -57,13 +60,12 @@ def build_message(results):
 
     allure_url = os.environ["ALLURE_REPORT_URL"]
 
-
     message = f"""
-<b>🧪 Bookstore API Automation Test Report</b>
+<b>📊 Bookstore API Automation Test Report</b>
 
 <b>{status}</b>
 
-<b>📊 Test Summary</b>
+<b>📝 Test Summary</b>
 ✅ Passed: {results["passed"]}
 ❌ Failed: {results["failed"]}
 ⏭️ Skipped: {results["skipped"]}
@@ -71,24 +73,19 @@ def build_message(results):
 ⏱ Duration: {results["duration"]:.2f}s
 """
 
-
     if results["failed_tests"]:
         message += "\n<b>❌ Failed Tests</b>\n"
 
         for test in results["failed_tests"]:
             message += f"• <code>{test}</code>\n"
 
-
     message += f"""
-<b>🔗 Links</b>
-▶️ <a href="{workflow_url}">GitHub Actions</a>
-
-📊 <a href="{allure_url}">Allure Report</a>
+<b>🔗 Report Links</b>
+📊 <a href="{allure_url}">View Allure Report</a>
+▶️ <a href="{workflow_url}">View Pipeline</a>
 """
 
-
     return message
-
 
 def send_telegram(message):
     """Send message to Telegram"""
@@ -114,14 +111,12 @@ def send_telegram(message):
 
     response.raise_for_status()
 
-
 def main():
     results = get_test_results()
 
     message = build_message(results)
 
     send_telegram(message)
-
 
 if __name__ == "__main__":
     main()

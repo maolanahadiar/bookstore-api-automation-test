@@ -14,5 +14,17 @@ EXPECTED_MESSAGES = {
     "duplicate_book": {
         "code": "1210",
         "message": "ISBN already present in the User's Collection!"
+    },
+    "empty_field": {
+        "code": "1200",
+        "message": "UserName and Password required."
+    },
+    "invalid_credentials": {
+        "code": "1207",
+        "message": "User not found!"
+    },
+    "invalid_user_id": {
+        "code": "1207",
+        "message": "User not found!"
     }
 }

@@ -3,7 +3,7 @@ from assertpy import assert_that
 from http import HTTPStatus
 from services.bookstore_service import BookStoreService
 from testdata.book_data import BOOKS
-from testdata.auth_data import TOKENS
+from testdata.auth_data import TOKEN
 from testdata.messages import EXPECTED_MESSAGES
 
 book_service = BookStoreService()
@@ -15,7 +15,7 @@ def test_add_book_without_token(created_user):
         response = book_service.add_book(
             user_id=created_user["user_id"],
             isbn=BOOKS["existing"]["isbn"],
-            token=TOKENS["empty_token"],
+            token=TOKEN["empty"],
         )
 
     with allure.step("Verify response status code"):
@@ -106,7 +106,7 @@ def test_delete_book_without_token(created_user):
         response = book_service.delete_book(
             user_id=created_user["user_id"],
             isbn=BOOKS["new"]["isbn"],
-            token=TOKENS["invalid_token"],
+            token=TOKEN["empty"],
         )
 
     with allure.step("Verify response status code"):

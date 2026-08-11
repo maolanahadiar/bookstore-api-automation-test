@@ -1,4 +1,4 @@
-# Bookstore API Automation Framework
+# Bookstore API Automation Test
 
 ![Python](https://img.shields.io/badge/Python-3.14-blue)
 ![Pytest](https://img.shields.io/badge/Pytest-9.1-orange)
@@ -11,7 +11,7 @@ This project contains automated tests for the [DemoQA Bookstore API](https://dem
 
 ## Project Features
 
-- API automation testing using Pytest
+- REST API automation testing
 - Service layer pattern for API interaction
 - Reusable API client implementation
 - Separated test data and configurations
@@ -28,10 +28,10 @@ This project contains automated tests for the [DemoQA Bookstore API](https://dem
 
 | Module | Scenario | Status |
 |:--|:--|:--:|
-| **Account** | Create new user account | ✅ |
+| **Account** | Register new account | ✅ |
+| | Login using valid credentials | ✅ |
 | | Generate authentication token | ✅ |
-| | Login with valid credentials | ✅ |
-| | Get user account details | ✅ |
+| | Get account details | ✅ |
 | | Delete user account | ✅ |
 | **BookStore** | Get all books | ✅ |
 | | Get a specific book by ISBN | ✅ |
@@ -43,10 +43,11 @@ This project contains automated tests for the [DemoQA Bookstore API](https://dem
 
 | Module | Scenario | Status |
 |:--|:--|:--:|
-| **Account** | Register with invalid credentials | 🚧 |
-| | Generate token with invalid credentials | 🚧 |
-| | Access account with invalid token | 🚧 |
-| | Delete account with invalid token | 🚧 |
+| **Account** | Register with empty fields | ✅ |
+| | Login using invalid credentials | ✅ |
+| | Generate token with empty fields | ✅ |
+| | Get account details using invalid user id | ✅ |
+| | Delete account using invalid token | ✅ |
 | **BookStore** | Get book with invalid ISBN | ✅ |
 | | Add book without token | ✅ |
 | | Add duplicate book to collection | ✅ |
@@ -67,7 +68,7 @@ This project contains automated tests for the [DemoQA Bookstore API](https://dem
 Clone repository:
 
 ```bash
-git clone https://github.com/maolanahadiar/bookstore-api-automation-framework.git
+git clone https://github.com/maolanahadiar/bookstore-api-automation-test.git
 ```
 
 Install dependencies:
@@ -130,7 +131,7 @@ Upload Test Artifacts & Logs
 Send Test Summary Notification to Telegram
 ```
 #### Latest Execution Status:
-[![Bookstore API Automation](https://github.com/maolanahadiar/book-store-api-automation-framework/actions/workflows/api-test.yml/badge.svg)](https://github.com/maolanahadiar/bookstore-api-automation-framework/actions/workflows/api-test.yml)
+[![Bookstore API Automation](https://github.com/maolanahadiar/bookstore-api-automation-test/actions/workflows/api-test.yml/badge.svg)](https://github.com/maolanahadiar/bookstore-api-automation-test/actions/workflows/api-test.yml)
 
 ---
 
@@ -146,4 +147,4 @@ The framework generates:
   - Request and response details
   - Execution debugging support
 
-➡️ [Click here to see the Live Allure Report](https://maolanahadiar.github.io/bookstore-api-automation-framework/)
+➡️ [Click here to see the Live Allure Report](https://maolanahadiar.github.io/bookstore-api-automation-test/)

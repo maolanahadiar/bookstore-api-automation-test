@@ -7,7 +7,6 @@ import sys
 from config import settings
 
 class AllureHelper:
-    """Utility methods for managing Allure test report"""
     
     @staticmethod
     def create_environment(results_dir):

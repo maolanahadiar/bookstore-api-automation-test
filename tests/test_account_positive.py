@@ -33,7 +33,7 @@ def test_register_success():
         assert_that(body["userID"]).is_instance_of(str)
         assert_that(body["username"]).is_instance_of(str)
         
-@allure.title("User can login with valid credential successfully")        
+@allure.title("User can login using valid credential successfully")        
 def test_login_success(created_user):
     
     with allure.step("Send request to login"):
