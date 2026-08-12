@@ -5,7 +5,7 @@
 ![Requests](https://img.shields.io/badge/Requests-2.34-green)
 ![Allure](https://img.shields.io/badge/Allure-2.16-red)
 
-This project contains automated tests for the [DemoQA Bookstore API](https://demoqa.com/swagger) built with Python, Pytest, and Requests for REST API automation testing with request/response logging, positive and negative test scenario coverage, Allure reporting, GitHub Actions CI/CD integration, and automated test summary notifications through Telegram.
+This project contains automated tests for the [DemoQA Bookstore API](https://demoqa.com/swagger) built with Python, Pytest, and Requests for REST API automation testing with request/response logging, Allure reporting, GitHub Actions CI/CD integration, and Telegram notifications.
 
 ---
 
@@ -18,7 +18,7 @@ This project contains automated tests for the [DemoQA Bookstore API](https://dem
 - Provide request and response logging
 - Allure reporting integration
 - GitHub Actions CI/CD integration
-- Automated test summary notifications through Telegram
+- Automated test result notifications via Telegram
 
 ---
 
@@ -79,7 +79,7 @@ pip install -r requirements.txt
 
 ---
 
-## Run Test
+## How to Run Test
 
 Run all tests:
 
@@ -98,6 +98,11 @@ Open Allure report:
 ```bash
 allure serve reports/allure-results
 ```
+
+---
+
+## Demo Video
+Bookstore API Automation Test: [Watch Demo](https://drive.google.com/file/d/1bo-qgWzqSHbZ7GrJrCa3E4KvnL3VdkZ5/view?usp=sharing)
 
 ---
 
@@ -137,14 +142,21 @@ Send Test Summary Notification to Telegram
 
 ## Test Reports
 
-The framework generates:
+After each CI/CD test execution, the framework automatically generates and delivers the following reports:
 
 - **Allure Report**
-  - Test execution summary
+  - Detailed test execution results
   - Passed/failed test results
+  - [Click here to see the Live Allure Report](https://maolanahadiar.github.io/bookstore-api-automation-test/)
 
 - **API Logs**
   - Request and response details
   - Execution debugging support
 
-➡️ [Click here to see the Live Allure Report](https://maolanahadiar.github.io/bookstore-api-automation-test/)
+- **Telegram Notifications**
+  - Automated test result summary
+  - Direct links to the Live Allure Report and GitHub Actions Pipeline
+    
+> Telegram Notification Preview 
+<p align="left">
+<img src="https://github.com/user-attachments/assets/ca33a1d5-ea4a-48ce-9775-21715afef075" width="500"/>

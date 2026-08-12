@@ -80,9 +80,9 @@ def build_message(results):
             message += f"• <code>{test}</code>\n"
 
     message += f"""
-<b>🔗 Report Links</b>
-📊 <a href="{allure_url}">View Allure Report</a>
-▶️ <a href="{workflow_url}">View Pipeline</a>
+<b>🔗 Links</b>
+📊 <a href="{allure_url}">View Live Allure Report</a>
+▶️ <a href="{workflow_url}">View GitHub Actions Pipeline</a>
 """
 
     return message

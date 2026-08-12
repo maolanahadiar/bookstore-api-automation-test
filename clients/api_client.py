@@ -20,6 +20,7 @@ class ApiClient:
         All HTTP methods are routed through this method to keep
         request handling and logging consistent across services
         """
+        
         method = method.upper()
 
         self.logger.info("=" * 80)
