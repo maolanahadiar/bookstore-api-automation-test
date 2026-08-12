@@ -1,0 +1,41 @@
+INFO     AccountService:api_client.py:26 ================================================================================
+INFO     AccountService:api_client.py:27 POST https://demoqa.com/Account/v1/User
+INFO     AccountService:api_client.py:36 Request Body:
+{
+    "userName": "tracy88904529",
+    "password": "zcJf8I1^frOz"
+}
+INFO     AccountService:api_client.py:55 Status Code : 201
+INFO     AccountService:api_client.py:58 Response Body:
+{
+    "userID": "8b8dd137-d626-4909-83ce-3a904ebef70a",
+    "username": "tracy88904529",
+    "books": []
+}
+INFO     AccountService:api_client.py:68 ================================================================================
+INFO     AccountService:api_client.py:26 ================================================================================
+INFO     AccountService:api_client.py:27 POST https://demoqa.com/Account/v1/GenerateToken
+INFO     AccountService:api_client.py:36 Request Body:
+{
+    "userName": "tracy88904529",
+    "password": "zcJf8I1^frOz"
+}
+INFO     AccountService:api_client.py:55 Status Code : 200
+INFO     AccountService:api_client.py:58 Response Body:
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InRyYWN5ODg5MDQ1MjkiLCJwYXNzd29yZCI6InpjSmY4STFeZnJPeiIsImlhdCI6MTc4NjU0MDA4OH0.YfKgcObGSiafRMxahfoKb4LkhU_6aRmm3lkXLswcakE",
+    "expires": "2026-08-19T13:08:08.560Z",
+    "status": "Success",
+    "result": "User authorized successfully."
+}
+INFO     AccountService:api_client.py:68 ================================================================================
+INFO     AccountService:api_client.py:26 ================================================================================
+INFO     AccountService:api_client.py:27 DELETE https://demoqa.com/Account/v1/User/8b8dd137-d626-4909-83ce-3a904ebef70a
+INFO     AccountService:api_client.py:42 Headers:
+{
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InRyYWN5ODg5MDQ1MjkiLCJwYXNzd29yZCI6InpjSmY4STFeZnJPeiIsImlhdCI6MTc4NjU0MDA4OH0.YfKgcObGSiafRMxahfoKb4LkhU_6aRmm3lkXLswcakE"
+}
+INFO     AccountService:api_client.py:55 Status Code : 204
+INFO     AccountService:api_client.py:63 Response Body:
+
+INFO     AccountService:api_client.py:68 ================================================================================
