@@ -1,0 +1,44 @@
+INFO     AccountService:api_client.py:26 ================================================================================
+INFO     AccountService:api_client.py:27 POST https://demoqa.com/Account/v1/User
+INFO     AccountService:api_client.py:36 Request Body:
+{
+    "userName": "taylor09903205",
+    "password": "xey!j77K#M%c"
+}
+INFO     AccountService:api_client.py:55 Status Code : 201
+INFO     AccountService:api_client.py:58 Response Body:
+{
+    "userID": "d75eb339-1424-4b0f-b4ad-60d307d80c16",
+    "username": "taylor09903205",
+    "books": []
+}
+INFO     AccountService:api_client.py:68 ================================================================================
+INFO     AccountService:api_client.py:26 ================================================================================
+INFO     AccountService:api_client.py:27 POST https://demoqa.com/Account/v1/GenerateToken
+INFO     AccountService:api_client.py:36 Request Body:
+{
+    "userName": "taylor09903205",
+    "password": "xey!j77K#M%c"
+}
+INFO     AccountService:api_client.py:55 Status Code : 200
+INFO     AccountService:api_client.py:58 Response Body:
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InRheWxvcjA5OTAzMjA1IiwicGFzc3dvcmQiOiJ4ZXkhajc3SyNNJWMiLCJpYXQiOjE3ODY1Mzg3NDR9.nGfPrIOzK6h-n-xnvMX8ax6Qe8qmxsYkfK_oVBMpLq8",
+    "expires": "2026-08-19T12:45:44.342Z",
+    "status": "Success",
+    "result": "User authorized successfully."
+}
+INFO     AccountService:api_client.py:68 ================================================================================
+INFO     AccountService:api_client.py:26 ================================================================================
+INFO     AccountService:api_client.py:27 GET https://demoqa.com/Account/v1/User/tokdetok
+INFO     AccountService:api_client.py:42 Headers:
+{
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InRheWxvcjA5OTAzMjA1IiwicGFzc3dvcmQiOiJ4ZXkhajc3SyNNJWMiLCJpYXQiOjE3ODY1Mzg3NDR9.nGfPrIOzK6h-n-xnvMX8ax6Qe8qmxsYkfK_oVBMpLq8"
+}
+INFO     AccountService:api_client.py:55 Status Code : 401
+INFO     AccountService:api_client.py:58 Response Body:
+{
+    "code": "1207",
+    "message": "User not found!"
+}
+INFO     AccountService:api_client.py:68 ================================================================================

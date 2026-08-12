@@ -1,0 +1,14 @@
+INFO     AccountService:api_client.py:26 ================================================================================
+INFO     AccountService:api_client.py:27 POST https://demoqa.com/Account/v1/Authorized
+INFO     AccountService:api_client.py:36 Request Body:
+{
+    "userName": "wiwokdetok",
+    "password": "notonle"
+}
+INFO     AccountService:api_client.py:55 Status Code : 404
+INFO     AccountService:api_client.py:58 Response Body:
+{
+    "code": "1207",
+    "message": "User not found!"
+}
+INFO     AccountService:api_client.py:68 ================================================================================

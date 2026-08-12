@@ -1,0 +1,14 @@
+INFO     AccountService:api_client.py:26 ================================================================================
+INFO     AccountService:api_client.py:27 POST https://demoqa.com/Account/v1/GenerateToken
+INFO     AccountService:api_client.py:36 Request Body:
+{
+    "userName": "",
+    "password": ""
+}
+INFO     AccountService:api_client.py:55 Status Code : 400
+INFO     AccountService:api_client.py:58 Response Body:
+{
+    "code": "1200",
+    "message": "UserName and Password required."
+}
+INFO     AccountService:api_client.py:68 ================================================================================

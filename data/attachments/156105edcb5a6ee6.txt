@@ -1,0 +1,26 @@
+INFO     AccountService:api_client.py:26 ================================================================================
+INFO     AccountService:api_client.py:27 POST https://demoqa.com/Account/v1/User
+INFO     AccountService:api_client.py:36 Request Body:
+{
+    "userName": "danawright503349",
+    "password": "1@tueiU2G0J*"
+}
+INFO     AccountService:api_client.py:55 Status Code : 201
+INFO     AccountService:api_client.py:58 Response Body:
+{
+    "userID": "e332f670-2192-47f1-94a9-d66ef580db08",
+    "username": "danawright503349",
+    "books": []
+}
+INFO     AccountService:api_client.py:68 ================================================================================
+INFO     AccountService:api_client.py:26 ================================================================================
+INFO     AccountService:api_client.py:27 POST https://demoqa.com/Account/v1/Authorized
+INFO     AccountService:api_client.py:36 Request Body:
+{
+    "userName": "danawright503349",
+    "password": "1@tueiU2G0J*"
+}
+INFO     AccountService:api_client.py:55 Status Code : 200
+INFO     AccountService:api_client.py:58 Response Body:
+false
+INFO     AccountService:api_client.py:68 ================================================================================

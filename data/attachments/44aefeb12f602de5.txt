@@ -1,0 +1,30 @@
+INFO     AccountService:api_client.py:26 ================================================================================
+INFO     AccountService:api_client.py:27 POST https://demoqa.com/Account/v1/GenerateToken
+INFO     AccountService:api_client.py:36 Request Body:
+{
+    "userName": "danawright503349",
+    "password": "1@tueiU2G0J*"
+}
+INFO     AccountService:api_client.py:55 Status Code : 200
+INFO     AccountService:api_client.py:58 Response Body:
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImRhbmF3cmlnaHQ1MDMzNDkiLCJwYXNzd29yZCI6IjFAdHVlaVUyRzBKKiIsImlhdCI6MTc4NjUzODc1MH0.-mBNCjDOgreZlfuFr55N2RBgdjjtmKkzDZnhTg5O_4c",
+    "expires": "2026-08-19T12:45:50.073Z",
+    "status": "Success",
+    "result": "User authorized successfully."
+}
+INFO     AccountService:api_client.py:68 ================================================================================
+INFO     AccountService:api_client.py:26 ================================================================================
+INFO     AccountService:api_client.py:27 GET https://demoqa.com/Account/v1/User/e332f670-2192-47f1-94a9-d66ef580db08
+INFO     AccountService:api_client.py:42 Headers:
+{
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImRhbmF3cmlnaHQ1MDMzNDkiLCJwYXNzd29yZCI6IjFAdHVlaVUyRzBKKiIsImlhdCI6MTc4NjUzODc1MH0.-mBNCjDOgreZlfuFr55N2RBgdjjtmKkzDZnhTg5O_4c"
+}
+INFO     AccountService:api_client.py:55 Status Code : 200
+INFO     AccountService:api_client.py:58 Response Body:
+{
+    "userId": "e332f670-2192-47f1-94a9-d66ef580db08",
+    "username": "danawright503349",
+    "books": []
+}
+INFO     AccountService:api_client.py:68 ================================================================================
