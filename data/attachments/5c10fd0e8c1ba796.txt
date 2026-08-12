@@ -1,0 +1,25 @@
+INFO     BookStoreService:api_client.py:26 ================================================================================
+INFO     BookStoreService:api_client.py:27 POST https://demoqa.com/BookStore/v1/Books
+INFO     BookStoreService:api_client.py:36 Request Body:
+{
+    "userId": "3d1f23d0-44d1-4fc9-a66d-8f12d45eab34",
+    "collectionOfIsbns": [
+        {
+            "isbn": "9781449331818"
+        }
+    ]
+}
+INFO     BookStoreService:api_client.py:42 Headers:
+{
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6Im5ncmF5NDE3MjQwIiwicGFzc3dvcmQiOiJVRGEyUUptbkszN0AiLCJpYXQiOjE3ODY1NDA1NjV9.XKIkUVREcahFjsU-Plf1WjfS7QyLZeNVz2MZ67Jt924"
+}
+INFO     BookStoreService:api_client.py:55 Status Code : 201
+INFO     BookStoreService:api_client.py:58 Response Body:
+{
+    "books": [
+        {
+            "isbn": "9781449331818"
+        }
+    ]
+}
+INFO     BookStoreService:api_client.py:68 ================================================================================
