@@ -1,0 +1,62 @@
+INFO     BookStoreService:api_client.py:26 ================================================================================
+INFO     BookStoreService:api_client.py:27 POST https://demoqa.com/BookStore/v1/Books
+INFO     BookStoreService:api_client.py:36 Request Body:
+{
+    "userId": "e6849bd5-3d1e-4910-9136-c4c9862f210a",
+    "collectionOfIsbns": [
+        {
+            "isbn": "9781449331818"
+        }
+    ]
+}
+INFO     BookStoreService:api_client.py:42 Headers:
+{
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6IndpbGxpYW1zZGFuaWVsOTUwNTA4IiwicGFzc3dvcmQiOiJmcFFDVHIqTzRtMGgiLCJpYXQiOjE3ODY1NDEwNTV9.uyNI07Fwi_MUR7Muv28Kjmx4wdsoNeBh1v_jbPvUcxQ"
+}
+INFO     BookStoreService:api_client.py:55 Status Code : 201
+INFO     BookStoreService:api_client.py:58 Response Body:
+{
+    "books": [
+        {
+            "isbn": "9781449331818"
+        }
+    ]
+}
+INFO     BookStoreService:api_client.py:68 ================================================================================
+INFO     BookStoreService:api_client.py:26 ================================================================================
+INFO     BookStoreService:api_client.py:27 POST https://demoqa.com/BookStore/v1/Books
+INFO     BookStoreService:api_client.py:36 Request Body:
+{
+    "userId": "e6849bd5-3d1e-4910-9136-c4c9862f210a",
+    "collectionOfIsbns": [
+        {
+            "isbn": "9781449331818"
+        }
+    ]
+}
+INFO     BookStoreService:api_client.py:42 Headers:
+{
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6IndpbGxpYW1zZGFuaWVsOTUwNTA4IiwicGFzc3dvcmQiOiJmcFFDVHIqTzRtMGgiLCJpYXQiOjE3ODY1NDEwNTV9.uyNI07Fwi_MUR7Muv28Kjmx4wdsoNeBh1v_jbPvUcxQ"
+}
+INFO     BookStoreService:api_client.py:55 Status Code : 400
+INFO     BookStoreService:api_client.py:58 Response Body:
+{
+    "code": "1210",
+    "message": "ISBN already present in the User's Collection!"
+}
+INFO     BookStoreService:api_client.py:68 ================================================================================
+INFO     BookStoreService:api_client.py:26 ================================================================================
+INFO     BookStoreService:api_client.py:27 DELETE https://demoqa.com/BookStore/v1/Book
+INFO     BookStoreService:api_client.py:36 Request Body:
+{
+    "userId": "e6849bd5-3d1e-4910-9136-c4c9862f210a",
+    "isbn": "9781449331818"
+}
+INFO     BookStoreService:api_client.py:42 Headers:
+{
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6IndpbGxpYW1zZGFuaWVsOTUwNTA4IiwicGFzc3dvcmQiOiJmcFFDVHIqTzRtMGgiLCJpYXQiOjE3ODY1NDEwNTV9.uyNI07Fwi_MUR7Muv28Kjmx4wdsoNeBh1v_jbPvUcxQ"
+}
+INFO     BookStoreService:api_client.py:55 Status Code : 204
+INFO     BookStoreService:api_client.py:63 Response Body:
+
+INFO     BookStoreService:api_client.py:68 ================================================================================

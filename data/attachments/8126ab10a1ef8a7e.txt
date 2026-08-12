@@ -1,0 +1,22 @@
+INFO     BookStoreService:api_client.py:26 ================================================================================
+INFO     BookStoreService:api_client.py:27 POST https://demoqa.com/BookStore/v1/Books
+INFO     BookStoreService:api_client.py:36 Request Body:
+{
+    "userId": "e6849bd5-3d1e-4910-9136-c4c9862f210a",
+    "collectionOfIsbns": [
+        {
+            "isbn": "9781449331818"
+        }
+    ]
+}
+INFO     BookStoreService:api_client.py:42 Headers:
+{
+    "Authorization": "Bearer "
+}
+INFO     BookStoreService:api_client.py:55 Status Code : 401
+INFO     BookStoreService:api_client.py:58 Response Body:
+{
+    "code": "1200",
+    "message": "User not authorized!"
+}
+INFO     BookStoreService:api_client.py:68 ================================================================================

@@ -1,0 +1,26 @@
+INFO     AccountService:api_client.py:26 ================================================================================
+INFO     AccountService:api_client.py:27 POST https://demoqa.com/Account/v1/User
+INFO     AccountService:api_client.py:36 Request Body:
+{
+    "userName": "williamsdaniel950508",
+    "password": "fpQCTr*O4m0h"
+}
+INFO     AccountService:api_client.py:55 Status Code : 201
+INFO     AccountService:api_client.py:58 Response Body:
+{
+    "userID": "e6849bd5-3d1e-4910-9136-c4c9862f210a",
+    "username": "williamsdaniel950508",
+    "books": []
+}
+INFO     AccountService:api_client.py:68 ================================================================================
+INFO     AccountService:api_client.py:26 ================================================================================
+INFO     AccountService:api_client.py:27 POST https://demoqa.com/Account/v1/Authorized
+INFO     AccountService:api_client.py:36 Request Body:
+{
+    "userName": "williamsdaniel950508",
+    "password": "fpQCTr*O4m0h"
+}
+INFO     AccountService:api_client.py:55 Status Code : 200
+INFO     AccountService:api_client.py:58 Response Body:
+false
+INFO     AccountService:api_client.py:68 ================================================================================
