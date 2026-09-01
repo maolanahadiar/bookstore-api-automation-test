@@ -1,0 +1,28 @@
+INFO     AccountService:api_client.py:26 ================================================================================
+INFO     AccountService:api_client.py:27 POST https://demoqa.com/Account/v1/User
+INFO     AccountService:api_client.py:36 Request Body:
+{
+    "userName": "ryanbush544740",
+    "password": "LSDHRFeDx56%"
+}
+INFO     AccountService:api_client.py:55 Status Code : 201
+INFO     AccountService:api_client.py:58 Response Body:
+{
+    "userID": "8846cc17-ece5-44f0-b2b2-d567649ac893",
+    "username": "ryanbush544740",
+    "books": []
+}
+INFO     AccountService:api_client.py:68 ================================================================================
+INFO     AccountService:api_client.py:26 ================================================================================
+INFO     AccountService:api_client.py:27 DELETE https://demoqa.com/Account/v1/User/8846cc17-ece5-44f0-b2b2-d567649ac893
+INFO     AccountService:api_client.py:42 Headers:
+{
+    "Authorization": "Bearer invalidsdhfj23h2j32hjasjd23adsasdj23234wewq"
+}
+INFO     AccountService:api_client.py:55 Status Code : 401
+INFO     AccountService:api_client.py:58 Response Body:
+{
+    "code": "1200",
+    "message": "User not authorized!"
+}
+INFO     AccountService:api_client.py:68 ================================================================================
