@@ -1,0 +1,30 @@
+INFO     AccountService:api_client.py:26 ================================================================================
+INFO     AccountService:api_client.py:27 POST https://demoqa.com/Account/v1/GenerateToken
+INFO     AccountService:api_client.py:36 Request Body:
+{
+    "userName": "james79454317",
+    "password": "eiT*eq@2pzHW"
+}
+INFO     AccountService:api_client.py:55 Status Code : 200
+INFO     AccountService:api_client.py:58 Response Body:
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImphbWVzNzk0NTQzMTciLCJwYXNzd29yZCI6ImVpVCplcUAycHpIVyIsImlhdCI6MTc5MDg5MTI0OH0.vCVb8rD4q_O6Hz-RKL_NM14asuUW7GqdwnDdllHY9Lk",
+    "expires": "2026-10-08T21:47:28.543Z",
+    "status": "Success",
+    "result": "User authorized successfully."
+}
+INFO     AccountService:api_client.py:68 ================================================================================
+INFO     AccountService:api_client.py:26 ================================================================================
+INFO     AccountService:api_client.py:27 GET https://demoqa.com/Account/v1/User/82dd24b6-4a6b-413f-9522-f8c27cd56573
+INFO     AccountService:api_client.py:42 Headers:
+{
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImphbWVzNzk0NTQzMTciLCJwYXNzd29yZCI6ImVpVCplcUAycHpIVyIsImlhdCI6MTc5MDg5MTI0OH0.vCVb8rD4q_O6Hz-RKL_NM14asuUW7GqdwnDdllHY9Lk"
+}
+INFO     AccountService:api_client.py:55 Status Code : 200
+INFO     AccountService:api_client.py:58 Response Body:
+{
+    "userId": "82dd24b6-4a6b-413f-9522-f8c27cd56573",
+    "username": "james79454317",
+    "books": []
+}
+INFO     AccountService:api_client.py:68 ================================================================================
