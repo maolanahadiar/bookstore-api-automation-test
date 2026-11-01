@@ -1,0 +1,30 @@
+INFO     AccountService:api_client.py:26 ================================================================================
+INFO     AccountService:api_client.py:27 POST https://demoqa.com/Account/v1/GenerateToken
+INFO     AccountService:api_client.py:36 Request Body:
+{
+    "userName": "michael56141309",
+    "password": "raAKLXpu^7ue"
+}
+INFO     AccountService:api_client.py:55 Status Code : 200
+INFO     AccountService:api_client.py:58 Response Body:
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6Im1pY2hhZWw1NjE0MTMwOSIsInBhc3N3b3JkIjoicmFBS0xYcHVeN3VlIiwiaWF0IjoxNzkzNTY3MzI5fQ.hhzaBZyi_6gYgDuIBRYH1Jy9fkBQKLR2aX0529qEBuI",
+    "expires": "2026-11-08T21:08:49.473Z",
+    "status": "Success",
+    "result": "User authorized successfully."
+}
+INFO     AccountService:api_client.py:68 ================================================================================
+INFO     AccountService:api_client.py:26 ================================================================================
+INFO     AccountService:api_client.py:27 GET https://demoqa.com/Account/v1/User/fab21510-fb3d-4854-9ffc-b4008b58a88b
+INFO     AccountService:api_client.py:42 Headers:
+{
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6Im1pY2hhZWw1NjE0MTMwOSIsInBhc3N3b3JkIjoicmFBS0xYcHVeN3VlIiwiaWF0IjoxNzkzNTY3MzI5fQ.hhzaBZyi_6gYgDuIBRYH1Jy9fkBQKLR2aX0529qEBuI"
+}
+INFO     AccountService:api_client.py:55 Status Code : 200
+INFO     AccountService:api_client.py:58 Response Body:
+{
+    "userId": "fab21510-fb3d-4854-9ffc-b4008b58a88b",
+    "username": "michael56141309",
+    "books": []
+}
+INFO     AccountService:api_client.py:68 ================================================================================

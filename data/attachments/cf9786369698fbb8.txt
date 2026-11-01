@@ -1,0 +1,15 @@
+INFO     AccountService:api_client.py:26 ================================================================================
+INFO     AccountService:api_client.py:27 POST https://demoqa.com/Account/v1/User
+INFO     AccountService:api_client.py:36 Request Body:
+{
+    "userName": "owilson340285",
+    "password": "*DkR^l3tiQ6Z"
+}
+INFO     AccountService:api_client.py:55 Status Code : 201
+INFO     AccountService:api_client.py:58 Response Body:
+{
+    "userID": "8b5eedda-6a83-4a37-b5e7-51ca3213e5e8",
+    "username": "owilson340285",
+    "books": []
+}
+INFO     AccountService:api_client.py:68 ================================================================================
